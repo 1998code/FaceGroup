@@ -1,6 +1,9 @@
 # Face Grouper
 
+![Face Grouper Cover](Cover.png)
+
 This tool automatically recognizes faces in images and groups them into folders.
+
 
 ## Setup
 
