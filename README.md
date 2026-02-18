@@ -22,17 +22,22 @@ This tool automatically recognizes faces in images and groups them into folders.
 
 2. Place your images in a folder named `input_images`.
 
-3. Run the script:
-   ```bash
-   python face_grouper.py
-   ```
+3. Run the tool:
+   - **Modern UI (Recommended):**
+     ```bash
+     python app.py
+     ```
+   - **Command Line:**
+     ```bash
+     python face_grouper.py
+     ```
 
 ## How it works
 
-The script will:
-1. Scan all images in the `input_images` directory.
-2. Detect faces and generate unique signatures for each person.
-3. Create folders for each detected person in `output_groups`.
-4. Copy the images into the corresponding folders.
+1. **Scan**: Scans all images in `input_images`.
+2. **Detect**: Uses AI to detect faces and generate unique signatures.
+3. **Group**: Clusters similar faces based on your preferred strictness.
+4. **Organize**: Creates folders in `output_groups` and copies images into them.
+5. **UI**: If using `app.py`, you can see a gallery of detected unique people in real-time.
 
 *Note: If an image contains multiple people, it will be copied into the folder of each person detected.*
