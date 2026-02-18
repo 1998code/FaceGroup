@@ -7,7 +7,7 @@
 
 This tool automatically recognizes faces in images and groups them into folders.
 
-## Screenshot
+## GUI
 
 ![Face Grouper GUI](GUI.png)
 
