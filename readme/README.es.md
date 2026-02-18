@@ -11,28 +11,72 @@ Esta herramienta reconoce automáticamente las caras en las imágenes y las agru
 
 - **Sistema Operativo:** macOS, Linux o Windows
 - **Versión de Python:** `3.11.9` (especificada en `.python-version`)
-- **Bibliotecas principales:** `face_recognition`, `opencv-python`, `numpy`
+- **Bibliotecas principales:** `face_recognition`, `opencv-python`, `numpy`, `gradio`
 
-## Configuración
+## GUI
 
-1. Instale las dependencias:
-   ```bash
-   pip install face_recognition opencv-python numpy
-   ```
+![Face Grouper GUI](../GUI.png)
 
-2. Coloque sus imágenes en una carpeta llamada `input_images`.
+## Instalación y Ejecución
 
-3. Ejecute el script:
-   ```bash
-   python face_grouper.py
-   ```
+### 1. Instalación
+Primero, asegúrese de haber configurado un entorno virtual e instalado todas las dependencias.
+
+#### macOS / Linux:
+```bash
+# Crear y activar el entorno virtual
+python3 -m venv venv
+source venv/bin/activate
+
+# Instalar dependencias
+./venv/bin/python3 -m pip install -r requirements.txt
+```
+
+#### Windows:
+```bash
+# Crear y activar el entorno virtual
+python -m venv venv
+.\venv\Scripts\activate
+
+# Instalar dependencias
+.\venv\Scripts\python -m pip install -r requirements.txt
+```
+
+### 2. Ejecutar la Herramienta
+Recomendamos usar la interfaz web moderna para obtener la mejor experiencia.
+
+#### Iniciar la GUI Web (Recomendado):
+- **macOS / Linux:** `./venv/bin/python3 app.py`
+- **Windows:** `.\venv\Scripts\python app.py`
+
+#### Iniciar Versión de Línea de Comandos:
+- **macOS / Linux:** `./venv/bin/python3 face_grouper.py`
+- **Windows:** `.\venv\Scripts\python face_grouper.py`
+
+## Solución de Problemas
+
+### `ModuleNotFoundError: No module named 'face_recognition'`
+Esto suele suceder cuando se ejecuta el script fuera del entorno virtual. Asegúrese siempre de usar la ruta al python del entorno virtual:
+- `macOS/Linux: ./venv/bin/python3 app.py`
+- `Windows: .\venv\Scripts\python app.py`
+
+### `zsh: command not found: python`
+En macOS, use `python3` en lugar de `python`.
+
+### El procesamiento es muy lento
+El reconocimiento facial es intensivo para la CPU. Cerrar otras aplicaciones pesadas o usar una máquina con más núcleos ayudará.
+
+### Resultados de detección deficientes
+Intente ajustar el control deslizante de **Tolerance (Strictness)** en la interfaz:
+- **Más bajo (ej. 0.4):** Más estricto. Use esto si la herramienta está mezclando a diferentes personas en una sola carpeta.
+- **Más alto (ej. 0.6):** Más flexible. Use esto si la herramienta está creando demasiadas carpetas para la misma persona.
 
 ## Cómo funciona
 
-El script:
-1. Escaneará todas las imágenes en el directorio `input_images`.
-2. Detectará las caras y generará firmas únicas para cada persona.
-3. Creará carpetas para cada persona detectada en `output_groups`.
-4. Copiará las imágenes en las carpetas correspondientes.
+1. **Escaneo**: Escanea todas las imágenes en el directorio de entrada especificado.
+2. **Detección**: Utiliza IA para detectar caras y generar firmas únicas.
+3. **Agrupación**: Agrupa caras similares según su nivel de restricción preferido.
+4. **Organización**: Crea carpetas en el directorio de salida y copia las imágenes en ellas.
+5. **UI**: Muestra una galería en tiempo real de las personas únicas detectadas.
 
 *Nota: Si una imagen contiene a varias personas, se copiará en la carpeta de cada persona detectada.*
