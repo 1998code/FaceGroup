@@ -11,28 +11,72 @@ Alat ini secara otomatis mengenali wajah dalam gambar dan mengelompokkannya ke d
 
 - **Sistem Operasi:** macOS, Linux, atau Windows
 - **Versi Python:** `3.11.9` (ditentukan dalam `.python-version`)
-- **Pustaka Utama:** `face_recognition`, `opencv-python`, `numpy`
+- **Pustaka Utama:** `face_recognition`, `opencv-python`, `numpy`, `gradio`
 
-## Pengaturan
+## GUI
 
-1. Instal dependensi:
-   ```bash
-   pip install face_recognition opencv-python numpy
-   ```
+![Face Grouper GUI](../GUI.png)
 
-2. Tempatkan gambar Anda dalam folder bernama `input_images`.
+## Instalasi & Eksekusi
 
-3. Jalankan skrip:
-   ```bash
-   python face_grouper.py
-   ```
+### 1. Instalasi
+Pertama, pastikan Anda telah menyiapkan lingkungan virtual dan menginstal semua dependensi.
+
+#### macOS / Linux:
+```bash
+# Buat dan aktifkan lingkungan virtual
+python3 -m venv venv
+source venv/bin/activate
+
+# Instal persyaratan
+./venv/bin/python3 -m pip install -r requirements.txt
+```
+
+#### Windows:
+```bash
+# Buat dan aktifkan lingkungan virtual
+python -m venv venv
+.\venv\Scripts\activate
+
+# Instal persyaratan
+.\venv\Scripts\python -m pip install -r requirements.txt
+```
+
+### 2. Menjalankan Alat
+Kami merekomendasikan penggunaan antarmuka web modern untuk pengalaman terbaik.
+
+#### Luncurkan GUI Web (Direkomendasikan):
+- **macOS / Linux:** `./venv/bin/python3 app.py`
+- **Windows:** `.\venv\Scripts\python app.py`
+
+#### Luncurkan Versi CLI:
+- **macOS / Linux:** `./venv/bin/python3 face_grouper.py`
+- **Windows:** `.\venv\Scripts\python face_grouper.py`
+
+## Troubleshooting
+
+### `ModuleNotFoundError: No module named 'face_recognition'`
+Ini biasanya terjadi saat Anda menjalankan skrip di luar lingkungan virtual. Selalu pastikan untuk menggunakan jalur ke python lingkungan virtual:
+- `macOS/Linux: ./venv/bin/python3 app.py`
+- `Windows: .\venv\Scripts\python app.py`
+
+### `zsh: command not found: python`
+Di macOS, gunakan `python3` daripada `python`.
+
+### Pemrosesan sangat lambat
+Pengenalan wajah sangat intensif CPU. Menutup aplikasi berat lainnya atau menggunakan mesin dengan lebih banyak core akan membantu.
+
+### Hasil deteksi buruk
+Coba sesuaikan slider **Tolerance (Strictness)** di UI:
+- **Lebih Rendah (misal: 0.4):** Lebih ketat. Gunakan ini jika alat mencampur orang yang berbeda ke dalam satu folder.
+- **Lebih Tinggi (misal: 0.6):** Lebih longgar. Gunakan ini jika alat membuat terlalu banyak folder untuk orang yang sama.
 
 ## Cara Kerja
 
-Skrip akan:
-1. Memindai semua gambar di direktori `input_images`.
-2. Mendeteksi wajah dan menghasilkan tanda tangan unik untuk setiap orang.
-3. Membuat folder untuk setiap orang yang terdeteksi di `output_groups`.
-4. Menyalin gambar ke folder yang sesuai.
+1. **Scan**: Memindai semua gambar di direktori input yang Anda tentukan.
+2. **Detect**: Menggunakan AI untuk mendeteksi wajah dan menghasilkan tanda tangan unik.
+3. **Group**: Mengelompokkan wajah serupa berdasarkan tingkat ketatnya preferensi Anda.
+4. **Organize**: Membuat folder di direktori output dan menyalin gambar ke dalamnya.
+5. **UI**: Menampilkan galeri real-time dari orang unik yang terdeteksi.
 
 *Catatan: Jika sebuah gambar berisi beberapa orang, gambar tersebut akan disalin ke folder masing-masing orang yang terdeteksi.*
