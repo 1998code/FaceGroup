@@ -4,6 +4,11 @@
 
 This tool automatically recognizes faces in images and groups them into folders.
 
+## Requirements
+
+- **Operating System:** macOS, Linux, or Windows
+- **Python Version:** `3.11.9` (as specified in `.python-version`)
+- **Core Libraries:** `face_recognition`, `opencv-python`, `numpy`
 
 ## Setup
 
