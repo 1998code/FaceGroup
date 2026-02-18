@@ -14,10 +14,6 @@ Công cụ này tự động nhận dạng khuôn mặt trong ảnh và nhóm ch
 - **Phiên bản Python:** `3.11.9` (được chỉ định trong `.python-version`)
 - **Thư viện chính:** `face_recognition`, `opencv-python`, `numpy`, `gradio`
 
-## GUI
-
-![Face Grouper GUI](../GUI.png)
-
 ## Cài đặt & Chạy
 
 ### 1. Cài đặt
@@ -49,6 +45,8 @@ Chúng tôi khuyên bạn nên sử dụng giao diện web hiện đại để c
 #### Khởi chạy Web GUI (Khuyên dùng):
 - **macOS / Linux:** `./venv/bin/python3 app.py`
 - **Windows:** `.\venv\Scripts\python app.py`
+
+![Face Grouper GUI](../GUI.png)
 
 #### Khởi chạy phiên bản dòng lệnh (CLI):
 - **macOS / Linux:** `./venv/bin/python3 face_grouper.py`

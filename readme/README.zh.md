@@ -14,10 +14,6 @@
 - **Python 版本:** `3.11.9` (见 `.python-version`)
 - **核心库:** `face_recognition`, `opencv-python`, `numpy`, `gradio`
 
-## GUI
-
-![Face Grouper GUI](../GUI.png)
-
 ## 安装与运行
 
 ### 1. 安装
@@ -49,6 +45,8 @@ python -m venv venv
 #### 启动 Web GUI (推荐):
 - **macOS / Linux:** `./venv/bin/python3 app.py`
 - **Windows:** `.\venv\Scripts\python app.py`
+
+![Face Grouper GUI](../GUI.png)
 
 #### 启动命令行版本:
 - **macOS / Linux:** `./venv/bin/python3 face_grouper.py`

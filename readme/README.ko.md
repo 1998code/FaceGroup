@@ -14,10 +14,6 @@
 - **Python 버전:** `3.11.9` (`.python-version`에 명시됨)
 - **핵심 라이브러리:** `face_recognition`, `opencv-python`, `numpy`, `gradio`
 
-## GUI
-
-![Face Grouper GUI](../GUI.png)
-
 ## 설치 및 실행
 
 ### 1. 설치
@@ -49,6 +45,8 @@ python -m venv venv
 #### Web GUI 실행 (권장):
 - **macOS / Linux:** `./venv/bin/python3 app.py`
 - **Windows:** `.\venv\Scripts\python app.py`
+
+![Face Grouper GUI](../GUI.png)
 
 #### 명령줄 버전 실행:
 - **macOS / Linux:** `./venv/bin/python3 face_grouper.py`

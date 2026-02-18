@@ -14,10 +14,6 @@
 - **Python バージョン:** `3.11.9` (`.python-version` に指定)
 - **コアライブラリ:** `face_recognition`, `opencv-python`, `numpy`, `gradio`
 
-## GUI
-
-![Face Grouper GUI](../GUI.png)
-
 ## インストールと実行
 
 ### 1. インストール
@@ -49,6 +45,8 @@ python -m venv venv
 #### Web GUI の起動 (推奨):
 - **macOS / Linux:** `./venv/bin/python3 app.py`
 - **Windows:** `.\venv\Scripts\python app.py`
+
+![Face Grouper GUI](../GUI.png)
 
 #### コマンドライン版の起動:
 - **macOS / Linux:** `./venv/bin/python3 face_grouper.py`

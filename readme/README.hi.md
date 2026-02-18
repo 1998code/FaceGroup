@@ -14,10 +14,6 @@
 - **पायथन संस्करण:** `3.11.9` (`.python-version` में निर्दिष्ट)
 - **मुख्य लाइब्रेरी:** `face_recognition`, `opencv-python`, `numpy`, `gradio`
 
-## GUI
-
-![Face Grouper GUI](../GUI.png)
-
 ## स्थापना और निष्पादन
 
 ### 1. स्थापना
@@ -49,6 +45,8 @@ python -m venv venv
 #### वेब GUI लॉन्च करें (अनुशंसित):
 - **macOS / Linux:** `./venv/bin/python3 app.py`
 - **Windows:** `.\venv\Scripts\python app.py`
+
+![Face Grouper GUI](../GUI.png)
 
 #### CLI संस्करण लॉन्च करें:
 - **macOS / Linux:** `./venv/bin/python3 face_grouper.py`

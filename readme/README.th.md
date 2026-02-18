@@ -14,10 +14,6 @@
 - **เวอร์ชัน Python:** `3.11.9` (ระบุไว้ใน `.python-version`)
 - **ไลบรารีหลัก:** `face_recognition`, `opencv-python`, `numpy`, `gradio`
 
-## GUI
-
-![Face Grouper GUI](../GUI.png)
-
 ## การติดตั้งและการใช้งาน
 
 ### 1. การติดตั้ง
@@ -49,6 +45,8 @@ python -m venv venv
 #### เปิดใช้งาน Web GUI (แนะนำ):
 - **macOS / Linux:** `./venv/bin/python3 app.py`
 - **Windows:** `.\venv\Scripts\python app.py`
+
+![Face Grouper GUI](../GUI.png)
 
 #### เปิดใช้งานเวอร์ชันบรรทัดคำสั่ง (CLI):
 - **macOS / Linux:** `./venv/bin/python3 face_grouper.py`

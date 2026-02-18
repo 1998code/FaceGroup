@@ -14,10 +14,6 @@ Esta herramienta reconoce automáticamente las caras en las imágenes y las agru
 - **Versión de Python:** `3.11.9` (especificada en `.python-version`)
 - **Bibliotecas principales:** `face_recognition`, `opencv-python`, `numpy`, `gradio`
 
-## GUI
-
-![Face Grouper GUI](../GUI.png)
-
 ## Instalación y Ejecución
 
 ### 1. Instalación
@@ -49,6 +45,8 @@ Recomendamos usar la interfaz web moderna para obtener la mejor experiencia.
 #### Iniciar la GUI Web (Recomendado):
 - **macOS / Linux:** `./venv/bin/python3 app.py`
 - **Windows:** `.\venv\Scripts\python app.py`
+
+![Face Grouper GUI](../GUI.png)
 
 #### Iniciar Versión de Línea de Comandos:
 - **macOS / Linux:** `./venv/bin/python3 face_grouper.py`

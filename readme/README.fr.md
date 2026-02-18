@@ -14,10 +14,6 @@ Cet outil reconnaît automatiquement les visages dans les images et les regroupe
 - **Version de Python :** `3.11.9` (spécifiée dans `.python-version`)
 - **Bibliothèques principales :** `face_recognition`, `opencv-python`, `numpy`, `gradio`
 
-## GUI
-
-![Face Grouper GUI](../GUI.png)
-
 ## Installation et Exécution
 
 ### 1. Installation
@@ -49,6 +45,8 @@ Nous recommandons d'utiliser l'interface web moderne pour la meilleure expérien
 #### Lancer l'interface Web GUI (Recommandé) :
 - **macOS / Linux :** `./venv/bin/python3 app.py`
 - **Windows :** `.\venv\Scripts\python app.py`
+
+![Face Grouper GUI](../GUI.png)
 
 #### Lancer la version en ligne de commande :
 - **macOS / Linux :** `./venv/bin/python3 face_grouper.py`

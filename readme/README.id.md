@@ -14,10 +14,6 @@ Alat ini secara otomatis mengenali wajah dalam gambar dan mengelompokkannya ke d
 - **Versi Python:** `3.11.9` (ditentukan dalam `.python-version`)
 - **Pustaka Utama:** `face_recognition`, `opencv-python`, `numpy`, `gradio`
 
-## GUI
-
-![Face Grouper GUI](../GUI.png)
-
 ## Instalasi & Eksekusi
 
 ### 1. Instalasi
@@ -49,6 +45,8 @@ Kami merekomendasikan penggunaan antarmuka web modern untuk pengalaman terbaik.
 #### Luncurkan GUI Web (Direkomendasikan):
 - **macOS / Linux:** `./venv/bin/python3 app.py`
 - **Windows:** `.\venv\Scripts\python app.py`
+
+![Face Grouper GUI](../GUI.png)
 
 #### Luncurkan Versi CLI:
 - **macOS / Linux:** `./venv/bin/python3 face_grouper.py`

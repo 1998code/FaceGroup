@@ -8,10 +8,6 @@
 
 This tool automatically recognizes faces in images and groups them into folders.
 
-## GUI
-
-![Face Grouper GUI](GUI.png)
-
 ## Requirements
 
 - **Operating System:** macOS, Linux, or Windows
@@ -49,6 +45,8 @@ We recommend using the modern web interface for the best experience.
 #### Launch Web UI (Recommended):
 - **macOS / Linux:** `./venv/bin/python3 app.py`
 - **Windows:** `.\venv\Scripts\python app.py`
+
+![Face Grouper GUI](GUI.png)
 
 #### Launch CLI Version:
 - **macOS / Linux:** `./venv/bin/python3 face_grouper.py`
