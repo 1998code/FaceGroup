@@ -2,7 +2,7 @@
 
 ![Face Grouper Cover](Cover.png)
 
-[English](README.md) | [简体中文](readme/README.zh.md) | [日本語](readme/README.ja.md) | [한국어](readme/README.ko.md)
+[English](README.md) | [简体中文](readme/README.zh.md) | [繁體中文](readme/README.zh-TW.md) | [廣東話](readme/README.yue.md) | [日本語](readme/README.ja.md) | [한국어](readme/README.ko.md) | [Français](readme/README.fr.md) | [Español](readme/README.es.md)
 
 This tool automatically recognizes faces in images and groups them into folders.
 
