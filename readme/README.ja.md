@@ -2,6 +2,9 @@
 
 ![Face Grouper Cover](../Cover.png)
 
+| [English](../README.md) | [简体中文](README.zh.md) | [繁體中文](README.zh-TW.md) | [廣東話](README.yue.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Français](README.fr.md) | [Español](README.es.md) |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+
 このツールは、画像内の顔を自動的に認識し、フォルダにグループ化します。
 
 ## 必要条件

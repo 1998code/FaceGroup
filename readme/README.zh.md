@@ -2,6 +2,9 @@
 
 ![Face Grouper Cover](../Cover.png)
 
+| [English](../README.md) | [简体中文](README.zh.md) | [繁體中文](README.zh-TW.md) | [廣東話](README.yue.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Français](README.fr.md) | [Español](README.es.md) |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+
 此工具可以自动识别图像中的人脸并将其分组到不同的文件夹中。
 
 ## 运行要求
