@@ -72,6 +72,13 @@ Essayez d'ajuster le curseur **Tolerance (Strictness)** dans l'interface :
 - **Plus bas (ex: 0.4) :** Plus strict. Utilisez ceci si l'outil mélange différentes personnes dans un même dossier.
 - **Plus haut (ex: 0.6) :** Plus souple. Utilisez ceci si l'outil crée trop de dossiers pour la même personne.
 
+## Contribution
+
+Les contributions sont les bienvenues ! Si vous souhaitez aider à améliorer cet outil, veuillez :
+1. Forker le dépôt.
+2. Créer une nouvelle branche pour votre fonctionnalité ou correction de bug.
+3. Soumettre une pull request avec une description claire de vos modifications.
+
 ## Comment ça marche
 
 1. **Scan** : Scanne toutes les images de votre dossier d'entrée spécifié.
@@ -81,3 +88,8 @@ Essayez d'ajuster le curseur **Tolerance (Strictness)** dans l'interface :
 5. **UI** : Affiche une galerie en temps réel des personnes uniques détectées.
 
 *Note : Si une image contient plusieurs personnes, elle sera copiée dans le dossier de chaque personne détectée.*
+
+
+## Licence
+
+Ce projet est sous licence MIT - voir le fichier [LICENSE](../LICENSE) pour plus de détails.

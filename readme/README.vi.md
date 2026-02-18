@@ -72,6 +72,13 @@ Hãy thử điều chỉnh thanh trượt **Tolerance (Strictness)** trong giao 
 - **Thấp (ví dụ: 0.4):** Chặt chẽ hơn. Sử dụng nếu công cụ đang trộn lẫn những người khác nhau vào cùng một thư mục.
 - **Cao (ví dụ: 0.6):** Lỏng lẻo hơn. Sử dụng nếu công cụ đang tạo ra quá nhiều thư mục cho cùng một người.
 
+## Đóng góp
+
+Chúng tôi rất hoan nghênh các đóng góp! Nếu bạn muốn giúp cải thiện công cụ này, vui lòng:
+1. Fork kho lưu trữ.
+2. Tạo một nhánh mới cho tính năng hoặc bản sửa lỗi của bạn.
+3. Gửi pull request với mô tả rõ ràng về các thay đổi của bạn.
+
 ## Cách thức hoạt động
 
 1. **Quét**: Quét tất cả hình ảnh trong thư mục đầu vào bạn đã chỉ định.
@@ -81,3 +88,8 @@ Hãy thử điều chỉnh thanh trượt **Tolerance (Strictness)** trong giao 
 5. **UI**: Hiển thị thư viện thời gian thực về những người duy nhất được phát hiện.
 
 *Lưu ý: Nếu một hình ảnh có nhiều người, nó sẽ được sao chép vào thư mục của mỗi người được phát hiện.*
+
+
+## Giấy phép
+
+Dự án này được cấp phép theo Giấy phép MIT - xem tệp [LICENSE](../LICENSE) để biết chi tiết.

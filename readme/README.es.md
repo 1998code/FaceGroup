@@ -72,6 +72,13 @@ Intente ajustar el control deslizante de **Tolerance (Strictness)** en la interf
 - **Más bajo (ej. 0.4):** Más estricto. Use esto si la herramienta está mezclando a diferentes personas en una sola carpeta.
 - **Más alto (ej. 0.6):** Más flexible. Use esto si la herramienta está creando demasiadas carpetas para la misma persona.
 
+## Contribución
+
+¡Las contribuciones son bienvenidas! Si desea ayudar a mejorar esta herramienta, por favor:
+1. Haga un fork del repositorio.
+2. Cree una nueva rama para su función o corrección de errores.
+3. Envíe una pull request con una descripción clara de sus cambios.
+
 ## Cómo funciona
 
 1. **Escaneo**: Escanea todas las imágenes en el directorio de entrada especificado.
@@ -81,3 +88,8 @@ Intente ajustar el control deslizante de **Tolerance (Strictness)** en la interf
 5. **UI**: Muestra una galería en tiempo real de las personas únicas detectadas.
 
 *Nota: Si una imagen contiene a varias personas, se copiará en la carpeta de cada persona detectada.*
+
+
+## Licencia
+
+Este proyecto está bajo la Licencia MIT - vea el archivo [LICENSE](../LICENSE) para más detalles.

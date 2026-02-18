@@ -72,6 +72,13 @@ Coba sesuaikan slider **Tolerance (Strictness)** di UI:
 - **Lebih Rendah (misal: 0.4):** Lebih ketat. Gunakan ini jika alat mencampur orang yang berbeda ke dalam satu folder.
 - **Lebih Tinggi (misal: 0.6):** Lebih longgar. Gunakan ini jika alat membuat terlalu banyak folder untuk orang yang sama.
 
+## Kontribusi
+
+Kontribusi sangat disambut! Jika Anda ingin membantu meningkatkan alat ini, harap:
+1. Fork repositori ini.
+2. Buat cabang baru untuk fitur atau perbaikan bug Anda.
+3. Kirimkan pull request dengan deskripsi jelas tentang perubahan Anda.
+
 ## Cara Kerja
 
 1. **Scan**: Memindai semua gambar di direktori input yang Anda tentukan.
@@ -81,3 +88,8 @@ Coba sesuaikan slider **Tolerance (Strictness)** di UI:
 5. **UI**: Menampilkan galeri real-time dari orang unik yang terdeteksi.
 
 *Catatan: Jika sebuah gambar berisi beberapa orang, gambar tersebut akan disalin ke folder masing-masing orang yang terdeteksi.*
+
+
+## Lisensi
+
+Proyek ini dilisensikan di bawah Lisensi MIT - lihat file [LICENSE](../LICENSE) untuk detailnya.

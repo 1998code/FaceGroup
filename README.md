@@ -72,6 +72,19 @@ Try adjusting the **Tolerance (Strictness)** slider in the UI:
 - **Lower (e.g., 0.4):** More strict. Use this if the tool is mixing different people into one folder.
 - **Higher (e.g., 0.6):** More loose. Use this if the tool is creating too many folders for the same person.
 
+## Contributing
+
+Contributions are welcome! If you'd like to help improve this tool, please:
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix.
+3. Submit a pull request with a clear description of your changes.
+
+Ways to contribute:
+- Add support for more image formats.
+- Improve face recognition accuracy or speed.
+- Enhance the Gradio UI with more features.
+- Translate the documentation into more languages.
+
 ## How it works
 
 1. **Scan**: Scans all images in your specified input folder.
@@ -81,3 +94,7 @@ Try adjusting the **Tolerance (Strictness)** slider in the UI:
 5. **UI**: Displays a real-time gallery of detected unique people.
 
 *Note: If an image contains multiple people, it will be copied into the folder of each person detected.*
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
