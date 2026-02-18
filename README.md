@@ -7,37 +7,76 @@
 
 This tool automatically recognizes faces in images and groups them into folders.
 
+## Screenshot
+
+![Face Grouper GUI](GUI.png)
+
 ## Requirements
 
 - **Operating System:** macOS, Linux, or Windows
-- **Python Version:** `3.11.9` (as specified in `.python-version`)
-- **Core Libraries:** `face_recognition`, `opencv-python`, `numpy`
+- **Python Version:** `3.11.9`
+- **Core Libraries:** `face_recognition`, `opencv-python`, `numpy`, `gradio`
 
-## Setup
+## Setup & Execution
 
-1. Install dependencies:
-   ```bash
-   pip install face_recognition opencv-python numpy
-   ```
+### 1. Installation
+First, ensure you have a virtual environment set up and all dependencies installed.
 
-2. Place your images in a folder named `input_images`.
+#### macOS / Linux:
+```bash
+# Create and activate virtual environment
+python3 -m venv venv
+source venv/bin/activate
 
-3. Run the tool:
-   - **Modern UI (Recommended):**
-     ```bash
-     python app.py
-     ```
-   - **Command Line:**
-     ```bash
-     python face_grouper.py
-     ```
+# Install requirements
+./venv/bin/python3 -m pip install -r requirements.txt
+```
+
+#### Windows:
+```bash
+# Create and activate virtual environment
+python -m venv venv
+.\venv\Scripts\activate
+
+# Install requirements
+.\venv\Scripts\python -m pip install -r requirements.txt
+```
+
+### 2. Running the Tool
+We recommend using the modern web interface for the best experience.
+
+#### Launch Web UI (Recommended):
+- **macOS / Linux:** `./venv/bin/python3 app.py`
+- **Windows:** `.\venv\Scripts\python app.py`
+
+#### Launch CLI Version:
+- **macOS / Linux:** `./venv/bin/python3 face_grouper.py`
+- **Windows:** `.\venv\Scripts\python face_grouper.py`
+
+## Troubleshooting
+
+### `ModuleNotFoundError: No module named 'face_recognition'`
+This usually happens when you run the script outside of the virtual environment. Always make sure to use the path to the virtual environment's python:
+- `macOS/Linux: ./venv/bin/python3 app.py`
+- `Windows: .\venv\Scripts\python app.py`
+
+### `zsh: command not found: python`
+On macOS, use `python3` instead of `python`.
+
+### Processing is very slow
+Face recognition is CPU-intensive. Closing other heavy applications or using a machine with more cores will help.
+
+### Poor detection results
+Try adjusting the **Tolerance (Strictness)** slider in the UI:
+- **Lower (e.g., 0.4):** More strict. Use this if the tool is mixing different people into one folder.
+- **Higher (e.g., 0.6):** More loose. Use this if the tool is creating too many folders for the same person.
 
 ## How it works
 
-1. **Scan**: Scans all images in `input_images`.
+1. **Scan**: Scans all images in your specified input folder.
 2. **Detect**: Uses AI to detect faces and generate unique signatures.
 3. **Group**: Clusters similar faces based on your preferred strictness.
-4. **Organize**: Creates folders in `output_groups` and copies images into them.
-5. **UI**: If using `app.py`, you can see a gallery of detected unique people in real-time.
+4. **Organize**: Creates folders in the output directory and copies images into them.
+5. **UI**: Displays a real-time gallery of detected unique people.
 
 *Note: If an image contains multiple people, it will be copied into the folder of each person detected.*
